@@ -1,6 +1,47 @@
 @import 'reset.scss';
 
-p {
-  color: red;
-  font-size: 20px;
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* layout */
+#header {
+  background-image: url(img/header_bg.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+
+  /* header */
+  .header {
+    height: 327px;
+
+    .header_menu {
+      text-align: right;
+
+      a {
+        display: inline-block;
+        color: #fff;
+        padding: 8px 0 6px 10px;
+        font-weight: bold;
+        transition: 0.3s ease;
+        font-family: 'Abel', sans-serif;
+
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+/* media */
+@media (max-width: 1220px) {
+  .container {
+    width: 100%;
+
+    .row {
+      padding: 0 15px;
+    }
+  }
 }
