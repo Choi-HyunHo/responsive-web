@@ -132,7 +132,6 @@
 
 #nav {
   background-color: #f6fdff;
-  width: 100%;
 
   .nav {
     overflow: hidden;
@@ -218,12 +217,105 @@
 }
 
 /* media */
-@media (max-width: 1220px) {
+/* 화면 너비 0 ~ 1220px */
+@media screen and (max-width: 1220px) {
   .container {
     width: 100%;
 
     .row {
+      /* 화면 크기 조절 시 사이드에 딱 붙는 것을 방지 */
       padding: 0 15px;
     }
   }
+
+  .title {
+    .btn {
+      right: 5px;
+    }
+  }
+}
+
+/* 화면 너비 0 ~ 1024px */
+@media screen and (max-width: 1024px) {
+}
+
+/* 화면 너비 0 ~ 960px */
+@media screen and (max-width: 960px) {
+  #nav {
+    .nav {
+      div {
+        float: none;
+        width: 100%;
+
+        &:last-child {
+          width: 100%;
+        }
+
+        &:last-child li {
+          width: 33.33333%; /* 이등분 방지 */
+        }
+
+        ol {
+          margin-bottom: 10px;
+
+          li {
+            width: 33.33333%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 화면 너비 0 ~ 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* 화면 너비 0 ~ 600px */
+@media screen and (max-width: 600px) {
+  #nav {
+    .nav {
+      div {
+        &:last-child li {
+          width: 50%; /* 이등분 방지 */
+        }
+
+        ol {
+          li {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  #header {
+    .header {
+      height: auto;
+
+      .header_title {
+        display: none;
+      }
+
+      .header_icon {
+        display: none;
+      }
+    }
+  }
+
+  #title {
+    .title {
+      .btn {
+        display: none;
+      }
+    }
+  }
+}
+
+/* 화면 너비 0 ~ 480px */
+@media screen and (max-width: 480px) {
+}
+
+/* 화면 너비 0 ~ 320px */
+@media screen and (max-width: 320px) {
 }

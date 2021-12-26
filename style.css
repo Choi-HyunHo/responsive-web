@@ -255,8 +255,7 @@ a:hover {
               border-right: 5px solid transparent; }
 
 #nav {
-  background-color: #f6fdff;
-  width: 100%; }
+  background-color: #f6fdff; }
   #nav .nav {
     overflow: hidden;
     padding: 25px 0; }
@@ -316,8 +315,48 @@ a:hover {
         box-shadow: 0 0 0 3px rgba(71, 154, 191, 0.1) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset; }
 
 /* media */
-@media (max-width: 1220px) {
+/* 화면 너비 0 ~ 1220px */
+@media screen and (max-width: 1220px) {
   .container {
     width: 100%; }
     .container .row {
-      padding: 0 15px; } }
+      /* 화면 크기 조절 시 사이드에 딱 붙는 것을 방지 */
+      padding: 0 15px; }
+  .title .btn {
+    right: 5px; } }
+
+/* 화면 너비 0 ~ 1024px */
+/* 화면 너비 0 ~ 960px */
+@media screen and (max-width: 960px) {
+  #nav .nav div {
+    float: none;
+    width: 100%; }
+    #nav .nav div:last-child {
+      width: 100%; }
+    #nav .nav div:last-child li {
+      width: 33.33333%;
+      /* 이등분 방지 */ }
+    #nav .nav div ol {
+      margin-bottom: 10px; }
+      #nav .nav div ol li {
+        width: 33.33333%; } }
+
+/* 화면 너비 0 ~ 768px */
+/* 화면 너비 0 ~ 600px */
+@media screen and (max-width: 600px) {
+  #nav .nav div:last-child li {
+    width: 50%;
+    /* 이등분 방지 */ }
+  #nav .nav div ol li {
+    width: 50%; }
+  #header .header {
+    height: auto; }
+    #header .header .header_title {
+      display: none; }
+    #header .header .header_icon {
+      display: none; }
+  #title .title .btn {
+    display: none; } }
+
+/* 화면 너비 0 ~ 480px */
+/* 화면 너비 0 ~ 320px */
