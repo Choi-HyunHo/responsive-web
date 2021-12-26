@@ -177,10 +177,52 @@ a:hover {
         display: inline-block;
         padding: 10px 20px;
         margin-top: -9px;
+        margin-bottom: 20px;
         font-weight: bold;
         transition: box-shadow 0.25s ease-in-out; }
         #header .header .header_title a:hover {
           box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset; }
+    #header .header .header_icon {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 45px; }
+      #header .header .header_icon li {
+        display: inline;
+        margin: 0 2px; }
+        #header .header .header_icon li a {
+          position: relative;
+          display: inline-block;
+          background-color: antiquewhite;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          font-size: 35px;
+          line-height: 60px; }
+          #header .header .header_icon li a:hover span {
+            opacity: 1;
+            top: -33px; }
+          #header .header .header_icon li a span {
+            position: absolute;
+            left: 50%;
+            top: -40px;
+            transform: translateX(-50%);
+            font-size: 12px;
+            line-height: 1.6;
+            background-color: aliceblue;
+            padding: 3px 9px;
+            border-radius: 6px 0;
+            opacity: 0;
+            transition: all 0.3s ease;
+            /* 화살표 만드는 방법 */ }
+            #header .header .header_icon li a span:before {
+              content: '';
+              position: absolute;
+              left: 50%;
+              bottom: -5px;
+              margin-left: -5px;
+              border-top: 5px solid aliceblue;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent; }
 
 /* media */
 @media (max-width: 1220px) {
