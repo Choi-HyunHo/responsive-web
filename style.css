@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -141,18 +142,45 @@ a:hover {
   background-size: cover;
   /* header */ }
   #header .header {
-    height: 327px; }
+    height: 350px; }
     #header .header .header_menu {
-      text-align: right; }
+      text-align: right;
+      font-family: 'Abel', sans-serif; }
       #header .header .header_menu a {
         display: inline-block;
         color: #fff;
         padding: 8px 0 6px 10px;
         font-weight: bold;
-        transition: 0.3s ease;
-        font-family: 'Abel', sans-serif; }
+        transition: 0.3s ease; }
         #header .header .header_menu a:hover {
           color: #ccc; }
+    #header .header .header_title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 55px; }
+      #header .header .header_title h1 {
+        font-size: 30px;
+        opacity: 0.7;
+        background-color: beige;
+        display: inline-block;
+        /* 배경색을 텍스트 크기에 맞추기 위해 */
+        padding: 15px 30px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        transition: box-shadow 0.25s ease-in-out; }
+        #header .header .header_title h1:hover {
+          box-shadow: inset -9em 0 0 0 #257fac, inset 9em 0 0 0 #257fac; }
+      #header .header .header_title a {
+        font-size: 16px;
+        opacity: 0.7;
+        background-color: antiquewhite;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: -9px;
+        font-weight: bold;
+        transition: box-shadow 0.25s ease-in-out; }
+        #header .header .header_title a:hover {
+          box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset; }
 
 /* media */
 @media (max-width: 1220px) {

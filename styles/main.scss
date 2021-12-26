@@ -14,10 +14,11 @@
 
   /* header */
   .header {
-    height: 327px;
+    height: 350px;
 
     .header_menu {
       text-align: right;
+      font-family: 'Abel', sans-serif;
 
       a {
         display: inline-block;
@@ -25,10 +26,46 @@
         padding: 8px 0 6px 10px;
         font-weight: bold;
         transition: 0.3s ease;
-        font-family: 'Abel', sans-serif;
 
         &:hover {
           color: #ccc;
+        }
+      }
+    }
+
+    .header_title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 55px;
+
+      h1 {
+        font-size: 30px;
+        opacity: 0.7;
+        background-color: beige;
+        display: inline-block; /* 배경색을 텍스트 크기에 맞추기 위해 */
+        padding: 15px 30px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        transition: box-shadow 0.25s ease-in-out;
+
+        &:hover {
+          box-shadow: inset -9em 0 0 0 #257fac, inset 9em 0 0 0 #257fac;
+        }
+      }
+
+      a {
+        font-size: 16px;
+        opacity: 0.7;
+        background-color: antiquewhite;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: -9px;
+        font-weight: bold;
+        transition: box-shadow 0.25s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset,
+            0 0 0 100px rgba(0, 0, 0, 0.1) inset;
         }
       }
     }
