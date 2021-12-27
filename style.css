@@ -352,7 +352,26 @@ body::-webkit-scrollbar {
     padding-bottom: 15px;
     margin-bottom: 15px;
     line-height: 18px;
-    color: #878787; }
+    color: #878787;
+    font-size: 14px; }
+  .column .menu li {
+    position: relative; }
+    .column .menu li a {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #878787;
+      border-bottom: 1px solid #dbdbdb;
+      padding: 10px;
+      display: block;
+      transition: box-shadow 0.34s ease, background 0.34s ease; }
+      .column .menu li a:hover {
+        box-shadow: inset 180px 0 0 0 rgba(36, 130, 174, 0.7);
+        color: white;
+        background-color: rgba(36, 130, 174, 0.9); }
+      .column .menu li a i {
+        position: absolute;
+        right: 10px;
+        top: 15px; }
 
 .col3 {
   border-bottom: 0; }
