@@ -250,6 +250,20 @@ body::-webkit-scrollbar {
 .column {
   padding: 15px;
   border-bottom: 1px solid #dbdbdb;
+
+  .col_title {
+    font-size: 20px;
+    color: #2f7fa6;
+    padding-bottom: 5px;
+  }
+
+  .col_desc {
+    border-bottom: 1px dashed #dbdbdb;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    line-height: 18px;
+    color: #878787;
+  }
 }
 
 .col1 {
