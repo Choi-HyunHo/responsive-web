@@ -446,6 +446,50 @@ body::-webkit-scrollbar {
       }
     }
   }
+
+  .column.col1 {
+    padding: 0;
+    border-bottom: 0;
+
+    .col_title {
+      display: none;
+    }
+
+    .col_desc {
+      display: none;
+    }
+  }
+
+  .menu {
+    ul {
+      overflow: hidden;
+
+      li {
+        float: left;
+        width: 33.33333%;
+        text-align: center;
+        border-right: 1px solid #dbdbdb;
+
+        &:nth-child(3n) {
+          border-radius: 0;
+        }
+
+        a {
+          color: #fff;
+          text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+          &:hover {
+            box-shadow: none;
+            background-color: rgba(36, 130, 174, 0.3);
+          }
+
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* 화면 너비 0 ~ 480px */
