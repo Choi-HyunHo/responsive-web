@@ -293,6 +293,37 @@ body::-webkit-scrollbar {
       }
     }
   }
+
+  .notice1 {
+    h5 {
+      font-size: 14px;
+      color: #2f7fa6;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      li {
+        /* 한 줄 효과 */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 15px;
+        padding-left: 8px;
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background-color: #449ce2;
+          position: absolute;
+          left: 0;
+          top: 6px;
+        }
+      }
+    }
+  }
 }
 
 .col1 {

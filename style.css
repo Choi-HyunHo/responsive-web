@@ -157,6 +157,9 @@ a:hover {
   text-indent: -9999px; }
 
 /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+.mt-15 {
+  margin-top: 15px; }
+
 * {
   box-sizing: border-box; }
 
@@ -372,6 +375,27 @@ body::-webkit-scrollbar {
         position: absolute;
         right: 10px;
         top: 15px; }
+  .column .notice1 h5 {
+    font-size: 14px;
+    color: #2f7fa6;
+    padding-bottom: 5px; }
+  .column .notice1 ul li {
+    /* 한 줄 효과 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    padding-left: 8px;
+    position: relative; }
+    .column .notice1 ul li:before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #449ce2;
+      position: absolute;
+      left: 0;
+      top: 6px; }
 
 .col3 {
   border-bottom: 0; }
