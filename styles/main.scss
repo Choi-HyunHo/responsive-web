@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* container */
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 }
@@ -216,6 +221,71 @@
   }
 }
 
+#contents .container {
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+
+#cont_left {
+  float: left;
+  width: 250px;
+}
+
+#cont_center {
+  overflow: hidden;
+  min-height: 1300px;
+  margin-right: 250px;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+
+#cont_right {
+  /* 화면이 줄어들었을 경우 크기 변화를 오른쪽에만 주기 위해 */
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+}
+
+.column {
+  padding: 15px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.col1 {
+}
+
+.col2 {
+}
+
+.col3 {
+  border-bottom: 0;
+}
+
+.col4 {
+}
+
+.col5 {
+}
+
+.col6 {
+  border-bottom: 0;
+}
+
+.col7 {
+}
+
+.col8 {
+}
+
+.col9 {
+  border-bottom: 0;
+}
+
+#footer {
+  border-top: 1px solid #dbdbdb;
+}
+
 /* media */
 /* 화면 너비 0 ~ 1220px */
 @media screen and (max-width: 1220px) {
@@ -232,6 +302,10 @@
     .btn {
       right: 5px;
     }
+  }
+
+  #contents .container {
+    border: 0;
   }
 }
 
@@ -265,10 +339,29 @@
       }
     }
   }
+
+  #cont_center {
+    margin-right: 0;
+    border-right: 0;
+  }
+
+  #cont_right {
+    position: static;
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+  }
 }
 
 /* 화면 너비 0 ~ 768px */
 @media screen and (max-width: 768px) {
+  #cont_left {
+    float: none;
+    width: 100%;
+  }
+
+  #cont_center {
+    border-left: 0;
+  }
 }
 
 /* 화면 너비 0 ~ 600px */
