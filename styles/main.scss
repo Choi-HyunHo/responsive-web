@@ -1,5 +1,6 @@
 @import 'reset.scss';
 @import 'slick.scss';
+@import 'lightgallery.scss';
 
 * {
   box-sizing: border-box;
@@ -499,6 +500,33 @@ body::-webkit-scrollbar {
   }
 }
 
+/* lightbox */
+.square {
+  a {
+    float: left;
+    width: 19%;
+    margin: 0.5%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    display: block;
+    content: '';
+    line-height: 0;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
 #footer {
   border-top: 1px solid #dbdbdb;
 }
@@ -524,10 +552,29 @@ body::-webkit-scrollbar {
   #contents .container {
     border: 0;
   }
+
+  .square {
+    a {
+      width: 24%;
+
+      &:nth-child(5n) {
+        display: none;
+      }
+    }
+  }
 }
 
 /* 화면 너비 0 ~ 1024px */
 @media screen and (max-width: 1024px) {
+  .square {
+    a {
+      width: 32.3333%;
+
+      &:nth-child(5) {
+        display: block;
+      }
+    }
+  }
 }
 
 /* 화면 너비 0 ~ 960px */
@@ -664,6 +711,16 @@ body::-webkit-scrollbar {
       }
     }
   }
+
+  .square {
+    a {
+      width: 49%;
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
 }
 
 /* 화면 너비 0 ~ 480px */
@@ -672,4 +729,10 @@ body::-webkit-scrollbar {
 
 /* 화면 너비 0 ~ 320px */
 @media screen and (max-width: 320px) {
+  .square {
+    a {
+      width: 100%;
+      margin: 0 0;
+    }
+  }
 }
