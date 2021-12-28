@@ -380,6 +380,17 @@ body::-webkit-scrollbar {
   }
 }
 
+.blog1,
+.blog2 {
+  img {
+    width: 100%;
+  }
+
+  .img-retina {
+    display: none;
+  }
+}
+
 .col1 {
 }
 

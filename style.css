@@ -438,6 +438,14 @@ body::-webkit-scrollbar {
       text-transform: uppercase;
       font-size: 10px; }
 
+.blog1 img,
+.blog2 img {
+  width: 100%; }
+
+.blog1 .img-retina,
+.blog2 .img-retina {
+  display: none; }
+
 .col3 {
   border-bottom: 0; }
 
