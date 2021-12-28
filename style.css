@@ -1673,9 +1673,19 @@ video {
     margin-right: 0;
     border-right: 0; }
   #cont_right {
+    overflow: hidden;
     position: static;
     width: 100%;
-    border-top: 1px solid #dbdbdb; } }
+    border-top: 1px solid #dbdbdb; }
+    #cont_right .column {
+      float: left;
+      width: 33.3333%; }
+      #cont_right .column .col7 {
+        border-right: 1px solid #dbdbdb;
+        border-bottom: 0; }
+      #cont_right .column .col8 {
+        border-right: 1px solid #dbdbdb;
+        border-bottom: 0; } }
 
 /* 화면 너비 0 ~ 768px */
 @media screen and (max-width: 768px) {
@@ -1727,11 +1737,19 @@ video {
   .square a {
     width: 49%; }
     .square a:nth-child(5) {
-      display: none; } }
+      display: none; }
+  #cont_right .column {
+    width: 50%; }
+  .col9 {
+    display: none; } }
 
 /* 화면 너비 0 ~ 480px */
 /* 화면 너비 0 ~ 320px */
 @media screen and (max-width: 320px) {
   .square a {
     width: 100%;
-    margin: 0 0; } }
+    margin: 0 0; }
+  #cont_right .column {
+    width: 100%; }
+  .col7 {
+    border: 1px solid #dbdbdb; } }

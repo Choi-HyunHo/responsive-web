@@ -695,9 +695,25 @@ video {
   }
 
   #cont_right {
+    overflow: hidden;
     position: static;
     width: 100%;
     border-top: 1px solid #dbdbdb;
+
+    .column {
+      float: left;
+      width: 33.3333%;
+
+      .col7 {
+        border-right: 1px solid #dbdbdb;
+        border-bottom: 0;
+      }
+
+      .col8 {
+        border-right: 1px solid #dbdbdb;
+        border-bottom: 0;
+      }
+    }
   }
 }
 
@@ -806,6 +822,16 @@ video {
       }
     }
   }
+
+  #cont_right {
+    .column {
+      width: 50%;
+    }
+  }
+
+  .col9 {
+    display: none;
+  }
 }
 
 /* 화면 너비 0 ~ 480px */
@@ -819,5 +845,15 @@ video {
       width: 100%;
       margin: 0 0;
     }
+  }
+
+  #cont_right {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .col7 {
+    border: 1px solid #dbdbdb;
   }
 }
