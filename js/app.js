@@ -16,4 +16,9 @@ $('.slider').slick({
 })
 
 //라이트 박스
-$('.lightbox').lightGallery({})
+$('.lightbox').lightGallery({
+  thumnail: true,
+  pause: 3000,
+  autoplay: true,
+  progressBar: true,
+})
