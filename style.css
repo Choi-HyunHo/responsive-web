@@ -1625,6 +1625,9 @@ body::-webkit-scrollbar {
 .clearfix:after {
   clear: both; }
 
+video {
+  width: 100%; }
+
 #footer {
   border-top: 1px solid #dbdbdb; }
 
