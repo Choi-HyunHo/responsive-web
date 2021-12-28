@@ -614,6 +614,33 @@ video {
 
 #footer {
   border-top: 1px solid #dbdbdb;
+  text-align: center;
+  padding: 30px 50px;
+
+  li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+    white-space: nowrap;
+
+    &:before {
+      content: '';
+      width: 1px;
+      height: 12px;
+      background-color: #dbdbdb;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    &:first-child:before {
+      width: 0;
+    }
+  }
+
+  address {
+    padding-top: 15px;
+  }
 }
 
 /* media */
