@@ -160,6 +160,10 @@ a:hover {
 .mt-15 {
   margin-top: 15px; }
 
+/* 반응형 이미지 */
+img {
+  width: 100%; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -542,6 +546,63 @@ body::-webkit-scrollbar {
 
 .col9 {
   border-bottom: 0; }
+
+/* 이미지 슬라이더 */
+.slider figure {
+  position: relative; }
+  .slider figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px; }
+    .slider figure figcaption em {
+      display: block;
+      font-weight: bold;
+      font-weight: 28px;
+      text-transform: uppercase;
+      font-family: 'Abel' sans-serif;
+      opacity: 0;
+      transition: all 0.84s ease;
+      transform: translateX(50px); }
+    .slider figure figcaption span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      opacity: 1;
+      transition: all 0.84s 0.2 ease;
+      transform: translateX(50px); }
+
+.slider .slick-active figcaption em {
+  opacity: 1;
+  transform: translateX(0); }
+
+.slider .slick-active figcaption span {
+  opacity: 1;
+  transform: translateX(0); }
+
+.slider .slick-dots {
+  display: block;
+  width: 100%;
+  text-align: center; }
+  .slider .slick-dots li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px; }
+    .slider .slick-dots li button {
+      display: block;
+      font-size: 0;
+      line-height: 0;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      background-color: #5dbfeb;
+      border-radius: 50%; }
 
 #footer {
   border-top: 1px solid #dbdbdb; }

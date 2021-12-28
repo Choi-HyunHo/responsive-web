@@ -422,6 +422,83 @@ body::-webkit-scrollbar {
   border-bottom: 0;
 }
 
+/* 이미지 슬라이더 */
+.slider {
+  figure {
+    position: relative;
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 18px;
+
+      em {
+        display: block;
+        font-weight: bold;
+        font-weight: 28px;
+        text-transform: uppercase;
+        font-family: 'Abel' sans-serif;
+        opacity: 0;
+        transition: all 0.84s ease;
+        transform: translateX(50px);
+      }
+
+      span {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        opacity: 1;
+        transition: all 0.84s 0.2 ease;
+        transform: translateX(50px);
+      }
+    }
+  }
+
+  .slick-active {
+    figcaption {
+      em {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      span {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .slick-dots {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: 5px;
+
+      button {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        background-color: #5dbfeb;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
 #footer {
   border-top: 1px solid #dbdbdb;
 }
