@@ -503,6 +503,8 @@ body::-webkit-scrollbar {
 /* lightbox */
 .square {
   a {
+    position: relative;
+    overflow: hidden;
     float: left;
     width: 19%;
     margin: 0.5%;
@@ -510,6 +512,85 @@ body::-webkit-scrollbar {
     img {
       width: 100%;
       display: block;
+    }
+
+    em {
+      background-color: rgba(0, 0, 0, 0.77);
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      em {
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.57);
+      }
+    }
+
+    &:nth-child(1):hover {
+      img {
+        filter: blur(2px);
+      }
+    }
+
+    &:nth-child(2):hover {
+      img {
+        filter: brightness(50%);
+      }
+    }
+
+    &:nth-child(3):hover {
+      img {
+        filter: contrast(10%);
+      }
+    }
+
+    &:nth-child(4):hover {
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    &:nth-child(5):hover {
+      img {
+        filter: hue-rotate(120deg);
+      }
+    }
+
+    &:nth-child(6):hover {
+      img {
+        filter: invert(100%);
+      }
+    }
+
+    &:nth-child(7):hover {
+      img {
+        filter: opacity(10%);
+      }
+    }
+
+    &:nth-child(8):hover {
+      img {
+        filter: saturate(10%);
+      }
+    }
+
+    &:nth-child(9):hover {
+      img {
+        filter: sepia(120%);
+      }
+    }
+
+    &:nth-child(10):hover {
+      img {
+        filter: sepia(120%) hue-rotate(120deg);
+      }
     }
   }
 }
