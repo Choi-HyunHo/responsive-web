@@ -1326,7 +1326,8 @@ body::-webkit-scrollbar {
   background-color: #f6fdff; }
   #nav .nav {
     overflow: hidden;
-    padding: 25px 0; }
+    padding: 25px 0;
+    display: none; }
     #nav .nav div {
       float: left;
       width: 40%; }
